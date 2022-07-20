@@ -38,6 +38,19 @@ class LibraryListCollectionViewController: UICollectionViewController {
         
         return cell ?? collectionView.dequeueReusableCell(withReuseIdentifier: "LibraryListCollectionViewCell", for: indexPath)
     }
-
+    
+    // didSelectItemAt 사용하여 영화 제목 바꾸기
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // cellForItem 메소드를 사용하여 지정 항목의 위치에 있는 cell을 변경시키는 듯
+        let cell = collectionView.cellForItem(at: indexPath) as! LibraryListCollectionViewCell
+        
+        if cell.posterTitle.text == libraryCell.library[indexPath.row].krTitle {
+            cell.posterTitle.text = libraryCell.library[indexPath.row].title
+        } else {
+            cell.posterTitle.text = libraryCell.library[indexPath.row].krTitle
+        }
+        
+        
+    }
     
 }

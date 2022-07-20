@@ -9,6 +9,7 @@ import UIKit
 
 struct Librarys {
     let title: String
+    let krTitle: String
     let rate: Double
     let poster: String
     let backColor: UIColor
