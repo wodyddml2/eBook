@@ -31,11 +31,11 @@ class LibraryListCollectionViewController: UICollectionViewController {
     }
     // #select에 들어갈 Action: nav로 present
     @objc func nextPresent() {
-        let storyboard = UIStoryboard(name: "Search", bundle: nil)
-        let VC = storyboard.instantiateViewController(withIdentifier: SearchViewController.searchIndetifier) as! SearchViewController
-        let nav = UINavigationController(rootViewController: VC)
-        nav.modalPresentationStyle = .fullScreen
-        self.present(nav, animated: true)
+        let searchStoryboard = UIStoryboard(name: "Search", bundle: nil)
+        let searchVC = searchStoryboard.instantiateViewController(withIdentifier: SearchViewController.searchIndetifier) as! SearchViewController
+        let searchNav = UINavigationController(rootViewController: searchVC)
+        searchNav.modalPresentationStyle = .fullScreen
+        self.present(searchNav, animated: true)
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -61,6 +61,9 @@ class LibraryListCollectionViewController: UICollectionViewController {
             cell.posterTitle.text = libraryCell.library[indexPath.row].krTitle
         }
         
+        let DetailStoryboard = UIStoryboard(name: "Detail", bundle: nil)
+        let DetailVC = DetailStoryboard.instantiateViewController(withIdentifier: DetailViewController.detailIdentifier) as! DetailViewController
+        self.navigationController?.pushViewController(DetailVC, animated: true)
         
     }
     
