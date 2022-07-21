@@ -24,7 +24,18 @@ class LibraryListCollectionViewController: UICollectionViewController {
         layout.minimumInteritemSpacing = 8
         
         collectionView.collectionViewLayout = layout
-     
+        
+        // navItem 
+        navigationItem.title = "도서"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(nextPresent))
+    }
+    // #select에 들어갈 Action: nav로 present
+    @objc func nextPresent() {
+        let storyboard = UIStoryboard(name: "Search", bundle: nil)
+        let VC = storyboard.instantiateViewController(withIdentifier: SearchViewController.searchIndetifier) as! SearchViewController
+        let nav = UINavigationController(rootViewController: VC)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true)
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

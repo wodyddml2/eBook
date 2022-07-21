@@ -18,6 +18,8 @@
 		639FC4442887D260001CC188 /* LibraryListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC4432887D260001CC188 /* LibraryListCollectionViewController.swift */; };
 		639FC4472887D51C001CC188 /* Librarys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC4462887D51C001CC188 /* Librarys.swift */; };
 		639FC4492887D585001CC188 /* LibraryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC4482887D585001CC188 /* LibraryInfo.swift */; };
+		63B0712C2888FAA1001B8FAA /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B0712B2888FAA1001B8FAA /* Search.storyboard */; };
+		63B0712F2888FABB001B8FAA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B0712E2888FABB001B8FAA /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		639FC4432887D260001CC188 /* LibraryListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListCollectionViewController.swift; sourceTree = "<group>"; };
 		639FC4462887D51C001CC188 /* Librarys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Librarys.swift; sourceTree = "<group>"; };
 		639FC4482887D585001CC188 /* LibraryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryInfo.swift; sourceTree = "<group>"; };
+		63B0712B2888FAA1001B8FAA /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		63B0712E2888FABB001B8FAA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				639FC42D2887D0B8001CC188 /* SceneDelegate.swift */,
 				639FC42F2887D0B8001CC188 /* ViewController.swift */,
 				639FC4312887D0B8001CC188 /* Main.storyboard */,
+				63B0712D2888FAA4001B8FAA /* Search */,
 				639FC4452887D265001CC188 /* LibraryList */,
 				639FC4342887D0B9001CC188 /* Assets.xcassets */,
 				639FC4362887D0B9001CC188 /* LaunchScreen.storyboard */,
@@ -88,6 +93,15 @@
 				639FC4482887D585001CC188 /* LibraryInfo.swift */,
 			);
 			path = LibraryList;
+			sourceTree = "<group>";
+		};
+		63B0712D2888FAA4001B8FAA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				63B0712B2888FAA1001B8FAA /* Search.storyboard */,
+				63B0712E2888FABB001B8FAA /* SearchViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +166,7 @@
 				639FC4352887D0B9001CC188 /* Assets.xcassets in Resources */,
 				639FC4402887D241001CC188 /* LibraryList.storyboard in Resources */,
 				639FC4332887D0B8001CC188 /* Main.storyboard in Resources */,
+				63B0712C2888FAA1001B8FAA /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +179,7 @@
 			files = (
 				639FC4302887D0B8001CC188 /* ViewController.swift in Sources */,
 				639FC42C2887D0B8001CC188 /* AppDelegate.swift in Sources */,
+				63B0712F2888FABB001B8FAA /* SearchViewController.swift in Sources */,
 				639FC4492887D585001CC188 /* LibraryInfo.swift in Sources */,
 				639FC4442887D260001CC188 /* LibraryListCollectionViewController.swift in Sources */,
 				639FC4472887D51C001CC188 /* Librarys.swift in Sources */,

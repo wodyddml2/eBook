@@ -49,6 +49,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="258-dM-uys">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
